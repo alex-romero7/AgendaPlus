@@ -32,7 +32,7 @@ $total_contactos = count($contactos);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mis contactos | AgendaPro</title>
+    <title>Mis contactos | AgendaPlus</title>
 
     <link rel="stylesheet" href="../css/estilo.css">
 
@@ -45,7 +45,7 @@ $total_contactos = count($contactos);
         <div class="contenedor navbar-contenido">
 
             <a href="listar.php" class="navbar-logo">
-                Agenda<span>Pro</span>
+                Agenda<span>Plus</span>
             </a>
 
             <div class="navbar-usuario">
@@ -73,16 +73,19 @@ $total_contactos = count($contactos);
             <div>
 
                 <p class="dashboard-saludo">
-                    Panel principal
+                    Panel de control
                 </p>
 
                 <h1>
-                    Hola,
-                    <?= htmlspecialchars($_SESSION["usuario_nombre"]) ?>
+                    Bienvenido, <?= htmlspecialchars($_SESSION["usuario_nombre"]) ?>
                 </h1>
 
+                <div class="dashboard-correo">
+                    <span>Correo:</span> <?= htmlspecialchars($_SESSION["usuario_correo"] ?? "") ?>
+                </div>
+
                 <p>
-                    Administra tus contactos desde un solo lugar.
+                    Consulta, administra y organiza todos tus contactos personales.
                 </p>
 
             </div>
@@ -122,11 +125,11 @@ $total_contactos = count($contactos);
                 <div>
 
                     <h2>
-                        Mis contactos
+                        Directorio de Contactos
                     </h2>
 
                     <p>
-                        Lista de contactos registrados en tu agenda.
+                        Listado completo de personas registradas en tu cuenta.
                     </p>
 
                 </div>
@@ -138,17 +141,17 @@ $total_contactos = count($contactos);
                 <div class="estado-vacio">
 
                     <h3>
-                        Tu agenda está vacía
+                        Aún no tienes contactos guardados
                     </h3>
 
                     <p>
-                        Comienza agregando tu primer contacto.
+                        Agrega personas para verlas organizadas en tu directorio.
                     </p>
 
                     <a
                         href="crear.php"
                         class="btn btn-principal">
-                        Crear contacto
+                        Agregar primer contacto
                     </a>
 
                 </div>
@@ -185,8 +188,7 @@ $total_contactos = count($contactos);
                                                 $contacto["nombre"],
                                                 ENT_QUOTES, 
                                                 "UTF-8"
-                                            
-                                            )?>
+                                            ) ?>
                                         </strong>
                                     </td>
 
@@ -211,14 +213,13 @@ $total_contactos = count($contactos);
                                         </a>
 
                                         <form action="eliminar.php" method="POST"
-                                            onsubmit="return confirm('¿Estás seguro de eliminar este contacto?');"
+                                            onsubmit="return confirm('¿Estás seguro de que deseas eliminar este contacto?');"
                                             style="display:inline;">
 
                                             <input type="hidden" name="id" value="<?= (int)$contacto["id"] ?>">
                                             
                                             <button type="submit" class="accion-eliminar">
-                                                Eliminar 
-                                                
+                                                Eliminar
                                             </button> 
 
                                         </form>

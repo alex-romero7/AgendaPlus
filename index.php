@@ -14,7 +14,7 @@ if (isset($_SESSION["usuario_id"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AgendaPro</title>
+    <title>AgendaPlus — Gestión de Contactos</title>
 
     <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -28,17 +28,17 @@ if (isset($_SESSION["usuario_id"])) {
             <div class="inicio-contenido">
 
                 <div class="logo">
-                    Agenda<span>Pro</span>
+                    Agenda<span>Plus</span>
                 </div>
 
                 <h1>
-                    Tu agenda,
-                    <span>organizada y segura.</span>
+                    Tu agenda personal,
+                    <span>simple y siempre al día.</span>
                 </h1>
 
                 <p>
-                    Administra tus contactos de manera sencilla,
-                    rápida y segura desde un solo lugar.
+                    Gestiona, organiza y encuentra a tus contactos de forma rápida,
+                    eficiente y con total privacidad desde cualquier lugar.
                 </p>
 
                 <div class="inicio-botones">

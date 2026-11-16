@@ -1,4 +1,4 @@
-# AgendaPro — Agenda Personal de Contactos
+# AgendaPlus — Agenda Personal de Contactos
 
 Aplicación web desarrollada en PHP y MySQL para la gestión académica y profesional de una agenda personal de contactos, integrando autenticación de usuarios, control de sesiones y aislamiento estricto de información.
 
@@ -6,25 +6,19 @@ Aplicación web desarrollada en PHP y MySQL para la gestión académica y profes
 
 ## Ficha Académica
 
-* **Institución:** [Completar: Nombre de la Institución / Universidad]
-* **Carrera / Programa:** [Completar: Carrera o Programa Académico]
-* **Asignatura / Módulo:** [Completar: Nombre de la Asignatura / Módulo]
-* **Autor / Estudiante:** Vimos [Completar: Nombres y Apellidos completos]
-* **Docente / Tutora:** [Completar: Nombre de la Docente / Tutora]
-* **Fecha de Entrega:** [Completar: Fecha de entrega]
-* **Repositorio en GitHub:** https://github.com/Jvimos/AgendaPro
-
----
-
-## Video de Presentación y Sustentación
-
-* **Enlace del Video:** `[Completar: Pegar aquí el enlace al video de presentación (YouTube / Google Drive / OneDrive)]`
+* **Institución:** UNIVERSIDAD PARTICULAR DE LOJA
+* **Carrera / Programa:** Tecnología de la Información 
+* **Asignatura / Módulo:** Desarrollo Web
+* **Estudiante:** Romero Landa Alex Sebastián
+* **Docente / Tutora:** TORRES GUARNIZO DIANA ALEXANDRA
+* **Fecha de Entrega:** 15/11/2026
+* **Repositorio en GitHub:** https://github.com/alex-romero7/AgendaPlus
 
 ---
 
 ## Descripción y Objetivo del Proyecto
 
-AgendaPro es un sistema web concebido para que cada usuario registrado disponga de un entorno privado donde registrar, consultar, actualizar y eliminar contactos de forma organizada y segura.
+AgendaPlus es un sistema web concebido para que cada usuario registrado disponga de un entorno privado donde registrar, consultar, actualizar y eliminar contactos de forma organizada y segura.
 
 El objetivo principal es aplicar buenas prácticas de desarrollo web backend en PHP con arquitectura cliente-servidor y base de datos relacional MySQL, cumpliendo con los estándares de seguridad requeridos: cifrado unidireccional de contraseñas, gestión segura de sesiones, sentencias preparadas contra inyección SQL y control estricto de autorización para evitar el acceso no autorizado a datos ajenos.
 
@@ -126,9 +120,6 @@ AgendaContactos/
 │
 ├── includes/                   # Componentes de soporte
 │   ├── mensajes.php            # Funciones para mensajes flash de sesión (éxito/error)
-│   ├── header.php              # Archivo base reservado para modularización futura
-│   ├── navbar.php              # Archivo base reservado para modularización futura
-│   └── footer.php              # Archivo base reservado para modularización futura
 │
 ├── js/                         # Scripts de cliente
 │   └── app.js                  # Archivo base reservado para scripts futuros

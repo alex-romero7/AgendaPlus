@@ -23,7 +23,7 @@ if (isset($_SESSION["usuario_id"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Iniciar sesión | AgendaPro</title>
+    <title>Iniciar sesión | AgendaPlus</title>
 
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -35,12 +35,12 @@ if (isset($_SESSION["usuario_id"])) {
         <section class="auth-contenedor">
 
             <div class="auth-marca">
-                <a href="../index.php">Agenda<span>Pro</span></a>
+                <a href="../index.php">Agenda<span>Plus</span></a>
             </div>
 
             <div class="auth-cabecera">
-                <h1>Bienvenido de nuevo</h1>
-                <p>Inicia sesión para acceder a tu agenda personal.</p>
+                <h1>Iniciar sesión</h1>
+                <p>Ingresa tus credenciales para acceder a tu agenda.</p>
             </div>
 
             <?php mostrarMensaje(); ?>
@@ -78,15 +78,15 @@ if (isset($_SESSION["usuario_id"])) {
                     type="submit"
                     class="btn btn-principal btn-completo"
                 >
-                    Iniciar sesión
+                    Ingresar al sistema
                 </button>
 
             </form>
 
             <div class="auth-pie">
                 <p>
-                    ¿Todavía no tienes una cuenta?
-                    <a href="registro.php">Crear cuenta</a>
+                    ¿Aún no tienes cuenta?
+                    <a href="registro.php">Regístrate aquí</a>
                 </p>
             </div>
 

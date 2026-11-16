@@ -16,7 +16,7 @@ require_once "../includes/mensajes.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Crear cuenta | AgendaPro</title>
+    <title>Crear cuenta | AgendaPlus</title>
 
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -29,7 +29,7 @@ require_once "../includes/mensajes.php";
 
             <div class="auth-marca">
                 <a href="../index.php">
-                    Agenda<span>Pro</span>
+                    Agenda<span>Plus</span>
                 </a>
             </div>
 
@@ -38,7 +38,7 @@ require_once "../includes/mensajes.php";
                 <h1>Crear una cuenta</h1>
 
                 <p>
-                    Regístrate para comenzar a administrar tus contactos.
+                    Regístrate para comenzar a organizar tu libreta personal.
                 </p>
 
             </div> 
@@ -57,7 +57,7 @@ require_once "../includes/mensajes.php";
                         type="text"
                         id="nombre"
                         name="nombre"
-                        placeholder="Ingresa tu nombre"
+                        placeholder="Ej. Carlos Mendoza"
                         maxlength="100"
                         required
                     >
@@ -74,7 +74,7 @@ require_once "../includes/mensajes.php";
                         type="email"
                         id="correo"
                         name="correo"
-                        placeholder="ejemplo@correo.com"
+                        placeholder="tucorreo@ejemplo.com"
                         maxlength="150"
                         required
                     >
@@ -91,7 +91,7 @@ require_once "../includes/mensajes.php";
                         type="password"
                         id="password"
                         name="password"
-                        placeholder="Crea una contraseña"
+                        placeholder="Crea una contraseña segura"
                         minlength="6"
                         maxlength="72"
                         required
@@ -109,7 +109,7 @@ require_once "../includes/mensajes.php";
                         type="password"
                         id="password_confirmar"
                         name="password_confirmar"
-                        placeholder="Repite tu contraseña"
+                        placeholder="Vuelve a escribir la contraseña"
                         minlength="6"
                         maxlength="72"
                         required
@@ -120,7 +120,7 @@ require_once "../includes/mensajes.php";
                 <button
                     type="submit"
                     class="btn btn-principal btn-completo">
-                    Crear cuenta
+                    Registrarme
                 </button>
 
             </form>
@@ -128,9 +128,9 @@ require_once "../includes/mensajes.php";
             <div class="auth-pie">
 
                 <p>
-                    ¿Ya tienes una cuenta?
+                    ¿Ya tienes una cuenta registrada?
                     <a href="login.php">
-                        Iniciar sesión
+                        Inicia sesión
                     </a>
                 </p>
 

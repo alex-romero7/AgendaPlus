@@ -1,4 +1,4 @@
- <?php
+<?php
 
 session_start();
 
@@ -19,7 +19,7 @@ require_once "../includes/mensajes.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nuevo contacto | AgendaPro</title>
+    <title>Nuevo contacto | AgendaPlus</title>
 
     <link rel="stylesheet" href="../css/estilo.css">
 
@@ -32,7 +32,7 @@ require_once "../includes/mensajes.php";
         <div class="contenedor navbar-contenido">
 
             <a href="listar.php" class="navbar-logo">
-                Agenda<span>Pro</span>
+                Agenda<span>Plus</span>
             </a>
 
             <div class="navbar-usuario">
@@ -57,10 +57,10 @@ require_once "../includes/mensajes.php";
 
             <div class="formulario-cabecera">
 
-                <h1>Nuevo contacto</h1>
+                <h1>Registrar nuevo contacto</h1>
 
                 <p>
-                    Agrega una persona a tu agenda personal.
+                    Ingresa los datos de la persona para añadirla a tu agenda.
                 </p>
 
             </div>
@@ -130,7 +130,7 @@ require_once "../includes/mensajes.php";
                         type="text"
                         id="ciudad"
                         name="ciudad"
-                        placeholder="Ej. Macas"
+                        placeholder="Ej. Loja"
                         required
                     >
 
