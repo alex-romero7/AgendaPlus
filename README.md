@@ -57,15 +57,15 @@ El objetivo principal es aplicar buenas prácticas de desarrollo web backend en 
 
 ## Base de Datos e Importación
 
-El proyecto incluye el script SQL completo en la raíz: `agenda_contactos.sql`.
+El proyecto incluye el script SQL completo en la raíz: `AgendaPlus.sql`.
 
 ### Pasos para importar:
 1. Abrir phpMyAdmin en el navegador: `http://localhost/phpmyadmin/`.
 2. Dirigirse a la pestaña **Importar**.
-3. Seleccionar el archivo `agenda_contactos.sql` y hacer clic en **Importar** (o ejecutar su contenido en la pestaña **SQL**).
+3. Seleccionar el archivo `AgendaPlus.sql` y hacer clic en **Importar** (o ejecutar su contenido en la pestaña **SQL**).
 
 ### Estructura relacional:
-* **Base de datos:** `agenda_contactos` (juego de caracteres `utf8mb4` con cotejamiento `utf8mb4_unicode_ci`).
+* **Base de datos:** `AgendaPlus` (juego de caracteres `utf8mb4` con cotejamiento `utf8mb4_unicode_ci`).
 * **Tabla `usuarios`:** Almacena la cuenta de acceso (`id`, `nombre`, `correo` único, `password` como hash de 255 caracteres y `fecha_registro`).
 * **Tabla `contactos`:** Almacena los contactos registrados (`id`, `id_usuario`, `nombre`, `telefono`, `correo`, `ciudad`).
 * **Integridad referencial:** La tabla `contactos` implementa la restricción de clave foránea `fk_contactos_usuario` vinculada a `usuarios(id)` con reglas `ON DELETE CASCADE` y `ON UPDATE CASCADE`.
@@ -82,7 +82,7 @@ La conexión se gestiona mediante PDO en el archivo `config/conexion.php`.
   Si su servidor local de MySQL utiliza contraseña, edite la variable en `config/conexion.php`:
   ```php
   $host = "localhost";
-  $db = "agenda_contactos";
+  $db = "AgendaPlus";
   $usuario = "root";
   $password = "su_contraseña_aqui";
   ```
@@ -125,7 +125,7 @@ AgendaContactos/
 │   └── app.js                  # Archivo base reservado para scripts futuros
 │
 ├── .gitignore                  # Exclusiones de control de versiones
-├── agenda_contactos.sql        # Script de creación de base de datos y tablas
+├── AgendaPlus.sql              # Script de creación de base de datos y tablas
 ├── index.php                   # Página pública de bienvenida / redirección
 └── README.md                   # Documentación académica y técnica del proyecto
 ```

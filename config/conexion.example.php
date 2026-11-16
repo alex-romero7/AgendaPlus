@@ -1,15 +1,15 @@
 <?php
 
-// Configuracion de conexion a la base de datos para despliegue / evaluacion.
-// Para utilizar: renombrar o copiar este archivo como 'conexion.php' y configurar las credenciales locales de su respectivo equipos.
+// Plantilla de referencia para la conexión a la base de datos MySQL mediante PDO.
+// En XAMPP estándar el usuario es 'root' sin contraseña ($password = "").
 
-$host = "localhost";
-$db = "agenda_contactos";
+$host = "127.0.0.1";
+$db = "AgendaPlus";
 $usuario = "root";
 $password = ""; 
 $charset = "utf8mb4";
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$dsn = "mysql:host={$host};dbname={$db};charset={$charset}";
 
 $opciones = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

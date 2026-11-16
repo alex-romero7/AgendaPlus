@@ -12,9 +12,6 @@ Thumbs.db
 *.tmp
 *.bak
 
-# Configuración local y credenciales
-/config/conexion.php
-
 # Variables de entorno
 .env
 .env.*
